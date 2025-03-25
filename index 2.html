@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jameson Machining Inc.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <img src="logo.png" alt="Jameson Machining Logo" class="logo" />
+    <h1>Jameson Machining Inc.</h1>
+    <p class="motto">Grind with Passion</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Precision Grinding Services</h2>
+      <p>
+        At Jameson Machining Inc., we deliver high-precision grinding solutions tailored to meet your toughest requirements.
+        Our shop is built around performance, repeatability, and speed — all backed by proven tooling and premium surface finishes.
+        <strong>We grind with passion.</strong>
+      </p>
+      <a href="#contact" class="btn">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Grinding Services</h2>
+
+      <div class="service">
+        <img src="image1.jpeg" alt="Cylindrical Grinding" />
+        <div class="text">
+          <h3>Cylindrical Grinding</h3>
+          <p>
+            We specialize in precision shaft grinding, capable of handling parts up to <strong>24 inches in diameter</strong>
+            and <strong>80 inches in length</strong>. From chrome work to custom geometries, our shop is equipped for it all.
+          </p>
+        </div>
+      </div>
+
+      <div class="service">
+        <img src="image2.jpeg" alt="Surface Grinding" />
+        <div class="text">
+          <h3>Surface Grinding</h3>
+          <p>
+            Our surface grinding services emphasize <strong>flatness</strong> and <strong>tight surface finish tolerances</strong>.
+            We provide crisp, clean results even on specialty steels.
+          </p>
+        </div>
+      </div>
+
+      <div class="service">
+        <img src="image3.jpeg" alt="Centerless Grinding" />
+        <div class="text">
+          <h3>Centerless Grinding</h3>
+          <p>
+            Our German-engineered belt grinding system is ideal for light production and cleanup work, ensuring smooth, accurate finishes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions? Need a quote? Fill out the form below.</p>
+      <form action="https://formspree.io/f/mnnpzqrd" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="company" placeholder="Company Name" />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <textarea name="message" placeholder="Message" rows="4" required></textarea>
+        <input type="file" name="file" accept=".pdf,.docx,.jpg,.png" />
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <h3>Contact Information</h3>
+      <p><strong>Location:</strong> 1421 Speer road, Oakville, Ontario, Canada L6L2X5</p>
+      <p><strong>Phone:</strong> +1-9055142255</p>
+      <p><strong>Email:</strong> <a href="mailto:info@jamesonsgrinding.com">info@jamesonsgrinding.com</a></p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/l-james-83a5bbb3" target="_blank">LinkedIn</a>
+        <a href="https://www.google.com/maps/place/Jameson+Machining+Inc/@43.4222966,-79.7170955,16z" target="_blank">Google Maps</a>
+      </div>
+      <p class="copyright">&copy; 2025 Jameson Machining Inc. | All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
