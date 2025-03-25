@@ -1,109 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jameson Machining Inc.</title>
-  <link rel="stylesheet" href="style.css" />
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Jameson Machining Inc.</title>
+ <link rel="stylesheet" href="style.css" />
+ <style>
+  .logo-fade {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+</style>
+
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <img src="logo.png" alt="Jameson Machining Logo" class="logo" />
-    <h1>Jameson Machining Inc.</h1>
-    <p class="motto">Grind with Passion</p>
-  </header>
+ <!-- Header with Logo -->
+ <header>
+   <img src="logo.png" alt="Jameson Machining Logo" class="logo-fade" style="max-width: 300px; height: auto;" />
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+   <h1>Jameson Machining Inc.</h1>
+   <p>"Grind with Passion"</p>
+ </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Precision Grinding Services</h2>
+ <!-- Navigation -->
+ <nav>
+   <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#services">Services</a></li>
+     <li><a href="#contact">Contact</a></li>
+   </ul>
+ </nav>
+
+ <!-- Hero Section -->
+ <section class="hero">
+  <h2>Precison Grinding Services</h2>
+  <p>
+    
+﻿ At Jameson Machining Inc., we deliver high-precision grinding solutions tailored to meet your toughest requirements. With a focus on shaft work, tight tolerances, and surface finish quality, we’ve built our shop around performance, repeatability, and speed — all backed by proven tooling and top quality surface finish.<br><br>
+    <strong>We grind with passion.</strong>
+  </p>
+  <a href="#contact" class="btn">Get a Quote</a>
+</section>
+ <!-- Services Section -->
+  
+<section id="services" style="padding: 40px; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+  <div style="max-width: 900px; margin: auto;">
+    <h2 style="text-align: center; margin-bottom: 30px;">Our Grinding Services</h2>
+
+    <!-- Cylindrical Grinding -->
+    <div style="margin-bottom: 40px;">
+      <img src="image1.jpeg" alt="Cylindrical Grinding" style="width: 100%; max-width: 600px; display: block; margin: 0 auto 20px auto;">
+      <h3>Cylindrical Grinding</h3>
       <p>
-        At Jameson Machining Inc., we deliver high-precision grinding solutions tailored to meet your toughest requirements.
-        Our shop is built around performance, repeatability, and speed — all backed by proven tooling and premium surface finishes.
-        <strong>We grind with passion.</strong>
+        We specialize in precision shaft grinding, but our capabilities go beyond — we can grind
+        parts up to <strong>24 inches in diameter</strong> and <strong>80 inches in length</strong>,
+        including <strong>internal (ID/IID) grinding</strong>. Whether it’s chrome, custom jobs, or
+        challenging geometries, our equipment is built for it. We've invested in a full range of
+        <strong>custom and pre-made grinding fixtures</strong>, allowing us to deliver repeatable
+        accuracy without the need for customer-supplied tooling. Combined with our use of
+        <strong>high-performance carbon, diamond, and other premium grinding wheels</strong>, we ensure
+        consistent, high-quality results across a wide variety of applications.
       </p>
-      <a href="#contact" class="btn">Get a Quote</a>
     </div>
-  </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Our Grinding Services</h2>
-
-      <div class="service">
-        <img src="image1.jpeg" alt="Cylindrical Grinding" />
-        <div class="text">
-          <h3>Cylindrical Grinding</h3>
-          <p>
-            We specialize in precision shaft grinding, capable of handling parts up to <strong>24 inches in diameter</strong>
-            and <strong>80 inches in length</strong>. From chrome work to custom geometries, our shop is equipped for it all.
-          </p>
-        </div>
-      </div>
-
-      <div class="service">
-        <img src="image2.jpeg" alt="Surface Grinding" />
-        <div class="text">
-          <h3>Surface Grinding</h3>
-          <p>
-            Our surface grinding services emphasize <strong>flatness</strong> and <strong>tight surface finish tolerances</strong>.
-            We provide crisp, clean results even on specialty steels.
-          </p>
-        </div>
-      </div>
-
-      <div class="service">
-        <img src="image3.jpeg" alt="Centerless Grinding" />
-        <div class="text">
-          <h3>Centerless Grinding</h3>
-          <p>
-            Our German-engineered belt grinding system is ideal for light production and cleanup work, ensuring smooth, accurate finishes.
-          </p>
-        </div>
-      </div>
+    <!-- Surface Grinding -->
+    <div style="margin-bottom: 40px;">
+      <img src="image2.jpeg" alt="Surface Grinding" style="width: 100%; max-width: 600px; display: block; margin: 0 auto 20px auto;">
+      <h3>Surface Grinding</h3>
+      <p>
+        Our surface grinding services focus on achieving <strong>flatness and tight surface finish
+        tolerances</strong>. Backed by our investment in <strong>precision fixturing</strong> and
+        <strong>top-grade grinding wheels</strong>, we deliver clean, consistent finishes even on
+        challenging tool steels or specialty components. Our pre-made fixture setups ensure we can handle
+        one-offs or production work efficiently — without delays or compromise in quality.
+      </p>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Have questions? Need a quote? Fill out the form below.</p>
-      <form action="https://formspree.io/f/mnnpzqrd" method="POST" enctype="multipart/form-data">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="text" name="company" placeholder="Company Name" />
-        <input type="tel" name="phone" placeholder="Phone Number" required />
-        <textarea name="message" placeholder="Message" rows="4" required></textarea>
-        <input type="file" name="file" accept=".pdf,.docx,.jpg,.png" />
-        <button type="submit">Send Message</button>
-      </form>
+    <!-- Centerless Grinding -->
+    <div>
+      <img src="image3.jpeg" alt="Centerless Grinding" style="width: 100%; max-width: 600px; display: block; margin: 0 auto 20px auto;">
+      <h3>Centerless Grinding</h3>
+      <p>
+        We also offer limited centerless grinding capabilities through our
+        <strong>German-engineered centerless belt grinding system</strong>. Ideal for light production
+        and cleanup work on round parts, it provides smooth, accurate finishes where traditional
+        center-type setups aren’t required.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
+ <!-- Contact Section -->
+ <section id="contact">
+   <h2>Contact Us</h2>
+   <p>Have questions? Need a quote? Fill out the form below.</p>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <h3>Contact Information</h3>
-      <p><strong>Location:</strong> 1421 Speer road, Oakville, Ontario, Canada L6L2X5</p>
-      <p><strong>Phone:</strong> +1-9055142255</p>
-      <p><strong>Email:</strong> <a href="mailto:info@jamesonsgrinding.com">info@jamesonsgrinding.com</a></p>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/l-james-83a5bbb3" target="_blank">LinkedIn</a>
-        <a href="https://www.google.com/maps/place/Jameson+Machining+Inc/@43.4222966,-79.7170955,16z" target="_blank">Google Maps</a>
-      </div>
-      <p class="copyright">&copy; 2025 Jameson Machining Inc. | All rights reserved.</p>
-    </div>
-  </footer>
+   <form action="https://formspree.io/f/mnnpzqrd" method="POST" enctype="multipart/form-data">
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name" required />
+
+     <label for="company">Company Name:</label>
+     <input type="text" id="company" name="company" />
+
+     <label for="phone">Contact Number:</label>
+     <input type="tel" id="phone" name="phone" required />
+
+     <label for="message">Message:</label>
+     <textarea id="message" name="message" rows="4" required></textarea>
+
+     <label for="file">Attach File:</label>
+     <input type="file" id="file" name="file" accept=".pdf,.docx,.jpg,.png" />
+
+     <button type="submit">Send Message</button>
+   </form>
+ </section>
+
+ <!-- Footer -->
+ <footer>
+  
+   <footer style="background-color: #f2f2f2; padding: 30px 20px; text-align: center; font-family: Arial, sans-serif;">
+  <h3>Contact Information</h3>
+  <p><strong>Location:</strong> 1421 Speer road, Oakville, Ontario, Canada L6L2X5</p>
+  <p><strong>Phone:</strong> +1-9055142255 </p>
+  <p><strong>Email:</strong> <a href="mailto:info@jamesonsgrinding.com">info@jamesonsgrinding.com</a></p>
+
+  <div style="margin-top: 20px;">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/l-james-83a5bbb3" target="_blank" style="margin: 0 10px;">
+      <svg height="20" width="20" style="vertical-align: middle;"><use xlink:href="#linkedin-icon" /></svg> LinkedIn
+    </a>
+
+    <!-- Google Maps -->
+    <a href="https://www.google.com/maps/place/Jameson+Machining+Inc/@43.4222966,-79.7170955,16z/data=!3m1!4b1!4m6!3m5!1s0x882b5df27909d6b7:0xc750c57c4476335f!8m2!3d43.4222966!4d-79.7145206!16s%2Fg%2F11y94n5w07?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank" style="margin: 0 10px;">
+      <svg height="20" width="20" style="vertical-align: middle;"><use xlink:href="#map-icon" /></svg> Google Maps
+    </a>
+  </div>
+
+  <p style="margin-top: 20px;">&copy; 2025 Jameson Machining Inc. | All rights reserved.</p>
+
+  <!-- Embedded SVG Icons -->
+  <svg style="display: none;">
+    <symbol id="linkedin-icon" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M19 3A2 2 0 0121 5V19A2 2 0 0119 21H5A2 2 0 013 19V5A2 2 0 015 3H19M8.5 17V10.5H6V17H8.5M7.25 9.3A1.25 1.25 0 107.25 6.8 1.25 1.25 0 007.25 9.3M18 17V13.5C18 11.57 17.14 10.5 15.5 10.5C14.46 10.5 13.79 11.1 13.5 11.64V10.5H11V17H13.5V13.75C13.5 12.75 14.12 12.25 14.88 12.25C15.68 12.25 16 12.9 16 13.75V17H18Z" />
+    </symbol>
+    <symbol id="map-icon" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M15.5,4L9.5,6.11L3.5,4V20L9.5,21.89L15.5,20L21.5,21.89V6.11L15.5,4Z" />
+    </symbol>
+  </svg>
+</footer>
+ </footer>
 </body>
 </html>
